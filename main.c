@@ -2,12 +2,12 @@
 #include<stdio.h>
 int main()
 {
-    int num, i, cont=0;
+    int num, cont=0;
     do{
         printf("Ingrese un numero entero mayor a 0, pero menor a 100");
         scanf("%d", &num);
     } while(num<=0 || num>100);/* verif para acortar */
-    for(i=1; i<=100; i++)
+    for(int i=1; i<=100; i++)
     {
         if(num%i!=0){/*divido el numero por todo numero entre 1 el mismo*/
             cont++;/*si su resto es distinto de cero, cont++*/
